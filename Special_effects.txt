@@ -96,4 +96,17 @@ Less nice, I think:
 http://www.booked.net/widgets/weather
 
 
+*****************************Links within a webpage*****************************
+
+About html links in general - useful
+https://www.w3schools.com/html/html_links.asp
+
+Creating anchors within a document
+http://www.echoecho.com/htmllinks08.htm
+
+Another example of an anchor
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_a_href_anchor
+
+
+
 
