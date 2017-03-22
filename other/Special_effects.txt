@@ -1,0 +1,112 @@
+*****************************Embed google maps*****************************
+
+Instructions from website:
+https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=en
+
+
+	Open Google Maps.
+	Make sure the map, Street View image, or directions you'd like to embed shows up on the map.
+	In the top left corner, click the Menu .
+	Click Share or Embed map.
+	At the top of the box that appears, choose Embed map.
+	Choose the size you want, then copy the HTML embed code and paste it into the source code of your website or blog.
+
+
+*****************************Embed Google forms*****************************
+
+Instructions from website:
+https://productforums.google.com/forum/#!topic/docs/wrhuZBSZ9so
+
+	Open the form.
+	In the top right, click Send.
+	At the top of the window, click the Embed icon .
+	To copy the HTML that appears, click Copy.
+	Paste the HTML into your website or blog.
+
+
+Potentially useful points:
+http://www.choozurmobile.com/2016/08/what-are-web-forms-and-how-to-implement-it-on-facebook-pages.html
+
+
+*****************************Rain effect*****************************
+
+Absolutely stunning real rain
+(it's like raindrops faling on your screen - stuff behind the rain gets distorted. Could use this as the background, and then put our actual text/photos/etc over it)
+(second thoughts: seems massively complicated, not worth the effort if it refuses to work straight away)
+https://tympanus.net/codrops/2015/11/04/rain-water-effect-experiments/
+
+Very simple rain/snow (pixels / strings of pixels falling diagonally across the page)
+(unimpressive, but easy)
+http://dynamicdrive.com/dynamicindex3/rain.htm
+
+Rather plain CSS-only rain
+https://codemyui.com/configurable-rain-effect-css/
+
+Rather plain CSS & javascript rain (quite similar to the above)
+https://codepen.io/alemesre/pen/hAxGg
+
+CSS and javascript rain (doesn't look impressive/nice)
+http://jsbin.com/diraqoni/3/edit?html,css,js,output
+
+
+Real raindrops - alright. Slow etc.
+https://codepen.io/lbebber/pen/uIiJp
+
+Nice good real rain
+https://codepen.io/lbebber/pen/ZGGNvZ
+
+Simpler, less nice version of the above
+http://codepen.io/tiger2380/pen/doNxQX
+
+
+**********
+Beautiful/simple autumn leaves effect (+a plow comes to clean them up!)
+http://www.mf2fm.com/rv/dhtmlautumnleaves.php
+
+Simple red leaves, rotate etc.
+https://codepen.io/MAW/pen/KdmwMb
+
+Erratic leaves
+http://www.dynamicdrive.com/dynamicindex3/leaves.htm
+
+
+*****************************Change cursor when you hover over specific things*****************************
+
+CSS-only custom cursors (very easy)
+https://css-tricks.com/using-css-cursors/
+
+Some potentially un-useful info:
+	more CSS discussion
+	http://stackoverflow.com/questions/3087975/how-can-i-make-the-cursor-a-hand-when-a-user-hovers-over-a-list-item
+	using javascript
+	https://jwarby.github.io/jquery-awesome-cursor/
+	even more CSS discussion
+	http://www.htmlgoodies.com/beyond/css/article.php/3470321
+
+
+*****************************Embed weather widget*****************************
+
+Seems okay:
+https://www.accuweather.com/en/free-weather-widgets
+
+	Within the above, "current weather" widget seems best (nice and simple, which most others are not)
+	https://www.accuweather.com/en/free-weather-widgets/current
+
+Less nice, I think:
+http://www.booked.net/widgets/weather
+
+
+*****************************Links within a webpage*****************************
+
+About html links in general - useful
+https://www.w3schools.com/html/html_links.asp
+
+Creating anchors within a document
+http://www.echoecho.com/htmllinks08.htm
+
+Another example of an anchor
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_a_href_anchor
+
+
+
+
