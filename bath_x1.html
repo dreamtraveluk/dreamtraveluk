@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"> <!--link to bootstrap code-->
+<link rel="stylesheet" type="text/css" href="css/jolyn.css">.
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--link to a nice font on Google-->
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> <!--link to another nice font on Google-->
 
 <head>
 	<title>Bath</title>
@@ -14,14 +18,13 @@
 <body>
 
 
-<div class="top_bar">
-	<ul class="#">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bath">Bath</a></li>
-            <li><a href="#brighton">Brighton</a></li>
-            <li><a href="#edinburgh">Edinburgh</a></li>
-            <li><a href="#about">About</a></li>
-    </ul>
+<!---nav bar code-->
+<div class="w3-bar w3-grey">
+<a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button" href="bath_x1.html">Bath</a>
+  <a class="w3-bar-item w3-button" href="brighton_x1.html">Brighton</a>
+  <a class="w3-bar-item w3-button" href="edinburgh_x1.html">Edinburgh</a>
+  <a class="w3-bar-item w3-button" href="about_x1.html">About us</a>
 </div>
 
 
@@ -32,16 +35,24 @@
 	<p>A great destination for a relaxed weekend.</p>
 </div>
 
+<!--slideshow code-->
+<div class="w3-content w3-display-container bath-images">
+  <img class="mySlides bath-images" src="images/bath_1.jpg">
+  <img class="mySlides bath-images" src="images/bath_2.jpg">
+  <img class="mySlides bath-images" src="images/bath_3.jpg">
+  <img class="mySlides bath-images" src="images/bath_4.jpg">
 
-<div class="image_slideshow" id="about_images">
-	<img src='../images/bath_1.jpg' class='img-responsive center-block'>
-	<img src='../images/bath_2.jpg' class='img-responsive center-block'>
-	<img src='../images/bath_3.jpg' class='img-responsive center-block'>
-	<img src='../images/bath_4.jpg' class='img-responsive center-block'>
+   
+   <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle bath-slideshow-bar">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+
 </div>
-
-
-
+</div>
 
 <div class="attractions_sentences">
 	<p>Visit the Crescent for truly impressive Georgian architecture.</p>
@@ -55,7 +66,7 @@
 	<a href="http://www.sallylunns.co.uk/">Sally Lunn's Buns</a>
 	<p>Based in the oldest house in Bath, serving a variety of cakes and snacks during the day, as well as fine English food in the evening.</p>
 	<p>Pop by for a cup of tea in the afternoon, and make sure to try the traditional Bath buns!</p>
-	<img src='../images/bath_eat_1.jpg' class='img-responsive center-block'>
+	<img src='images/bath_eat_1.jpg' class='img-responsive center-block'>
 </div>
 
 
@@ -68,15 +79,34 @@
 
 
 
-<div class="social_bar">
-	<button class='btn-twitter btn-lg btn-info'>Twitter</button>
-    <button class='btn-facebook btn-lg btn-primary'>Facebook</button>
-    <button class='btn-pinterest btn-lg btn-danger'>Pinterest</button>
+<!--social media bar-->
+<div class="w3-bottom social_bar">
+  <ul class="w3-bottom-bar">
+    <a href="https://www.facebook.com/"><img class="socialmedia" src="images/Social_media_icons/facebook-icon.png"></i></a>
+    <a href="https://twitter.com/?lang=en"><img class="socialmedia" src="images/Social_media_icons/twitter-icon.png"></i></a>
+    <a href="https://www.instagram.com/"><img class="socialmedia" src="images/Social_media_icons/instagram-icon.png"></i></a>
 </div>
-
-
 
 </body>
 
+<script>
+
+//javascript for moving images on slideshow//
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	function plusDivs(n) {showDivs(slideIndex += n);}
+	function currentDiv(n) {showDivs(slideIndex = n);}
+
+	function showDivs(n) {var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("demo");
+						  if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+ 	for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+ 	for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" w3-white", "");}
+  	x[slideIndex-1].style.display = "block";  
+  	dots[slideIndex-1].className += " w3-white";}
+
+</script>
 
 </html>
