@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
 
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"> <!--link to bootstrap code-->
-<<<<<<< HEAD
-<link rel="stylesheet" type="text/css" href="css/jolyn.css">.
-=======
-<link rel="stylesheet" type="css" href="../css/jolyn.css">
->>>>>>> origin/master
-	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--link to a nice font on Google-->
-	<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> <!--link to another nice font on Google-->
+<link rel="stylesheet" type="text/css" href="css/jolyn.css">
+
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--link to a nice font on Google-->
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> <!--link to another nice font on Google-->
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> <!--jumbotron sentence font-->
+<link href="https://fonts.googleapis.com/css?family=Paprika" rel="stylesheet"> <!--jumbotron font-->
 
 <head>
 	<title>Dream Travel UK</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link href='css/bootstrap.css' rel='stylesheet'>
-	<link href='css/main.css' rel='stylesheet'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 
 <body>
 
+<div class="jumbotron">
+  <h1 id="jumbotron-h1">Dream Travel UK</h1>      
+  <p id="jumbotron-sentence">A Code First: Girls Project</p>
+</div>
+
+<!---nav bar code-->
 <div class="w3-bar w3-grey">
-<a class="w3-bar-item w3-button w3-home" href="#">Home</a>
-  <a class="w3-bar-item w3-button" href="#">Bath</a>
-  <a class="w3-bar-item w3-button" href="#">Brighton</a>
-  <a class="w3-bar-item w3-button" href="#">Edinburgh</a>
-  <a class="w3-bar-item w3-button" href="#">About us</a>
+<a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button" href="bath_x1.html">Bath</a>
+  <a class="w3-bar-item w3-button" href="brighton_x1.html">Brighton</a>
+  <a class="w3-bar-item w3-button" href="edinburgh_x1.html">Edinburgh</a>
+  <a class="w3-bar-item w3-button" href="about_x1.html">About us</a>
 </div>
 
 
@@ -36,19 +38,20 @@
 	<p>Time to explore the dreamy rest-of-UK!</p>
 </div>
 
-
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="images/bath_1.jpg" style="width:100%">
-  <img class="mySlides" src="images/brighton_1.jpg" style="width:100%">
-  <img class="mySlides" src="images/edinburgh_1.jpg" style="width:100%">
+<!--slideshow code-->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/bath_1.jpg">
+  <img class="mySlides" src="images/brighton_1.jpg">
+  <img class="mySlides" src="images/edinburgh_1.jpg">
 
    
-   <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+   <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle">
     <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
     <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
 </div>
 </div>
 
@@ -57,48 +60,45 @@
 	<h1>Know more dream places? Let us know and win a free trip!</h1>
 	<p>To suggest more dreamy places for the website, please fill in the form below.</p>
 	<p>If your suggestion is chosen to be added to the website, we'll give you a free weekend trip there!</p>
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3Vc18BbfjtDstQlX3cJ5pfFT-U0mTM7fzRuvG7-OFUpOttw/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	<!--Embed Google form-->
 </div>
 
 
-
-<div class="social_bar">
-	<button class='btn-twitter btn-lg btn-info'>Twitter</button>
-    <button class='btn-facebook btn-lg btn-primary'>Facebook</button>
-    <button class='btn-pinterest btn-lg btn-danger'>Pinterest</button>
+<div class="embed_form">
+  <h1>Know more dream places? Let us know and win a free trip!</h1>
+  <p>To suggest more dreamy places for the website, please fill in the form below.</p>
+  <p>If your suggestion is chosen to be added to the website, we'll give you a free weekend trip there!</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3Vc18BbfjtDstQlX3cJ5pfFT-U0mTM7fzRuvG7-OFUpOttw/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>
 
 
+<!--social media bar-->
+<div class="w3-bottom social_bar">
+  <ul class="w3-bottom-bar">
+    <a href="https://www.facebook.com/"><img class="socialmedia" src="images/Social_media_icons/facebook-icon.png"></i></a>
+    <a href="https://twitter.com/?lang=en"><img class="socialmedia" src="images/Social_media_icons/twitter-icon.png"></i></a>
+    <a href="https://www.instagram.com/"><img class="socialmedia" src="images/Social_media_icons/instagram-icon.png"></i></a>
+</div>
 
 </body>
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+//javascript for moving images on slideshow//
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	function plusDivs(n) {showDivs(slideIndex += n);}
+	function currentDiv(n) {showDivs(slideIndex = n);}
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
+	function showDivs(n) {var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("demo");
+						  if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+ 	for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+ 	for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" w3-white", "");}
+  	x[slideIndex-1].style.display = "block";  
+  	dots[slideIndex-1].className += " w3-white";}
 
 </script>
 

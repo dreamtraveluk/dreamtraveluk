@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"> <!--link to bootstrap code-->
+<link rel="stylesheet" type="text/css" href="css/jolyn.css">
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--link to a nice font on Google-->
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> <!--link to another nice font on Google-->
 
 <head>
 	<title>Edinburgh</title>
@@ -13,18 +17,14 @@
 
 <body>
 
-
-<div class="top_bar">
-	<ul class="#">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bath">Bath</a></li>
-            <li><a href="#brighton">Brighton</a></li>
-            <li><a href="#edinburgh">Edinburgh</a></li>
-            <li><a href="#about">About</a></li>
-    </ul>
+<!---nav bar code-->
+<div class="w3-bar w3-grey">
+<a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button" href="bath_x1.html">Bath</a>
+  <a class="w3-bar-item w3-button" href="brighton_x1.html">Brighton</a>
+  <a class="w3-bar-item w3-button" href="edinburgh_x1.html">Edinburgh</a>
+  <a class="w3-bar-item w3-button" href="about_x1.html">About us</a>
 </div>
-
-
 
 <div class="intro_sentences">
 	<p>Edinburgh is the capital of Scotland.</p>
@@ -33,13 +33,23 @@
 </div>
 
 
-<div class="image_slideshow" id="about_images">
-	<img src='images/edinburgh_1.jpg' class='img-responsive center-block'>
-	<img src='images/edinburgh_2.jpg' class='img-responsive center-block'>
-	<img src='images/edinburgh_3.jpg' class='img-responsive center-block'>
-	<img src='images/edinburgh_4.jpg' class='img-responsive center-block'>
-</div>
+<!--slideshow code-->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/edinburgh_1.jpg">
+  <img class="mySlides" src="images/edinburgh_2.jpg">
+  <img class="mySlides" src="images/edinburgh_3.jpg">
+  <img class="mySlides" src="images/edinburgh_4.jpg">
+   
+   <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(34"></span>
 
+</div>
+</div>
 
 
 <div class="attractions_sentences">
@@ -58,29 +68,41 @@
 </div>
 
 
-<div class="embed_weather">
-	<h1>Is it sunny out there?</h1>
-	<!-- weather widget start --><div id="m-booked-bl-simple-5587"> <a href="http://www.booked.net/weather/edinburgh-18086" class="booked-wzs-160-110 weather-customize" style="background-color:#6d874f;width:160px;" id="width1" > <div class="booked-wzs-160-110_in"> <div class="booked-wzs-160-data"> <div class="booked-wzs-160-left-img wrz-01"></div> <div class="booked-wzs-160-right"> <div class="booked-wzs-day-deck"> <div class="booked-wzs-day-val"> <div class="booked-wzs-day-number"><span class="plus">+</span>5</div> <div class="booked-wzs-day-dergee"> <div class="booked-wzs-day-dergee-val">&deg;</div> <div class="booked-wzs-day-dergee-name">C</div> </div> </div> <div class="booked-wzs-day"> <div class="booked-wzs-day-d"><span class="plus">+</span>5&deg;</div> <div class="booked-wzs-day-n"><span class="plus">+</span>5&deg;</div> </div> </div> <div class="booked-wzs-160-info"> <div class="booked-wzs-160-city">Edinburgh</div> <div class="booked-wzs-160-date">Wednesday, 22</div> </div> </div> </div> <div class="booked-wzs-center"> <span class="booked-wzs-bottom-l">See 7-Day Forecast</span> </div> </div></a> </div><script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href",'https://s.bookcdn.com/css/w/booked-wzs-widget-160.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file); function setWidgetData(data) { if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = document.getElementById('m-booked-bl-simple-5587'); if(objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-'+data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if(copyBlock !== null) objMainBlock.appendChild(copyBlock); } } } else { alert('data=undefined||data.results is empty'); } } </script> <script type="text/javascript" charset="UTF-8" src="https://widgets.booked.net/weather/info?action=get_weather_info&ver=5&cityID=18086&type=1&scode=2&ltid=3458&domid=w209&anc_id=96082&cmetric=1&wlangID=1&color=6d874f&wwidth=160&header_color=ffffff&text_color=333333&link_color=08488D&border_form=1&footer_color=ffffff&footer_text_color=333333&transparent=0"></script><!-- weather widget end -->
-</div>
-
 
 <div class="embed_map">
 	<h1>How to get there</h1>
 	<p>Use the map below to plan your journey now.</p>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19371.683619026393!2d-3.1860166370654323!3d55.95254063054934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1490215454180" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<!--Embed Google map-->
 </div>
 
-
-
-<div class="social_bar">
-	<button class='btn-twitter btn-lg btn-info'>Twitter</button>
-    <button class='btn-facebook btn-lg btn-primary'>Facebook</button>
-    <button class='btn-pinterest btn-lg btn-danger'>Pinterest</button>
+<!--social media bar-->
+<div class="w3-bottom social_bar">
+  <ul class="w3-bottom-bar">
+    <a href="https://www.facebook.com/"><img class="socialmedia" src="images/Social_media_icons/facebook-icon.png"></i></a>
+    <a href="https://twitter.com/?lang=en"><img class="socialmedia" src="images/Social_media_icons/twitter-icon.png"></i></a>
+    <a href="https://www.instagram.com/"><img class="socialmedia" src="images/Social_media_icons/instagram-icon.png"></i></a>
 </div>
-
-
 
 </body>
 
+<script>
+
+//javascript for moving images on slideshow//
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	function plusDivs(n) {showDivs(slideIndex += n);}
+	function currentDiv(n) {showDivs(slideIndex = n);}
+
+	function showDivs(n) {var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("demo");
+						  if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+ 	for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+ 	for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" w3-white", "");}
+  	x[slideIndex-1].style.display = "block";  
+  	dots[slideIndex-1].className += " w3-white";}
+
+</script>
 
 </html>
