@@ -1,2 +1,51 @@
-	.w3-home{font-family: 'Calligraffitti', cursive; font-size:25px;}
+
+<style>
+
+/*nav bar css*/
+	.w3-home{background-color: black;}
+	.w3-bar-item.w3-button.w3-home {font-family: "Calligraffitti", cursive; font-size:25px;}
 	.w3-bar{font-family: 'Handlee', cursive; font-size:25px;}
+
+/*slideshow css*/
+	.w3-display-container {max-width:100%; height:700px;}
+	.mySlides {width:100%;height:100%;}
+	.w3-badge {cursor:pointer;
+				   display: inline-block;
+    			   padding-left: 8px;
+    			   padding-right: 8px;
+    			   text-align: center;
+    			   height: 16px;}
+    .w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {width:100%;}
+
+/*resizing the Brighton food image*/
+	.img-responsive.center-block {height:500px; width:1000px;}
+
+/*resizing the about us images*/
+	.about-us-slideshow {width:100%; height: 500px;}
+	.w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {padding:25px;}
+
+/*social bar css*/
+	.embed_form {padding-bottom: 25px;}
+	.embed_map {padding-bottom: 25px;}
+	.w3-bottom{background-color: rgba(192,192,192,0.5); margin: 0 auto; text-align: center}
+	.w3-bottom-bar {margin: 0 auto; text-align: center;}
+	.socialmedia{width:25px; height:25px; margin-left:auto; margin-right:auto;}
+
+/*jumbotron css*/
+	.jumbotron {min-height: 500px; 
+				background-image: url('../images/home_coverpage.jpg'); 
+				background-size: cover; 
+				background-attachment: fixed;}
+	#jumbotron-h1 {font-family: "Paprika";
+				   font-size:100px;
+				   padding-bottom: 40px;
+				   color: bisque;
+    			   text-shadow: 4px 4px 6px #000000;;}
+	#jumbotron-sentence {font-family:"Homemade Apple";
+						 font-size: 50px;
+						 color:antiquewhite;
+						 text-shadow: 2px 2px 2px #000000;}
+	
+
+</style>
+
