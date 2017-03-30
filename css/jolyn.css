@@ -13,19 +13,19 @@
 	.page_title p{
 		font-family: "Fredoka One", cursive;
 		font-size: 60px;
-			}
+		}
+	.page_title{margin-bottom: 30px}
 
-	.page_title{
+	.nice_box{
 		background: rgba(200, 200, 200, 0.8);
 	}
 
 /*slideshow css*/
-	.w3-display-container {max-width:100%; height:700px;}
+	.w3-display-container {max-width:100%; height:400px;}
 	.mySlides {width:100%;height:100%;}
-	.w3-badge {cursor:pointer;
-				   display: inline-block;
-    			   padding-left: 8px;
-    			   padding-right: 8px;
+	.w3-badge {	   display: inline-block;
+    			   /* padding-left: 8px;
+    			   padding-right: 8px; */
     			   text-align: center;
     			   height: 16px;}
     .w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {width:100%;}
@@ -61,7 +61,10 @@
 						 text-shadow: 2px 2px 2px #000000;}
 	
 /*google form css*/
-	#google_form {text-align: center;}
+	#google_form {
+		text-align: center;
+		margin-top: 100px;
+	}
 
 
 </style>
