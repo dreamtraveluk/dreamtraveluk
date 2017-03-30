@@ -13,6 +13,10 @@
 	.page_title p{
 		font-family: "Fredoka One", cursive;
 		font-size: 60px;
+			}
+
+	.page_title{
+		background: rgba(200, 200, 200, 0.8);
 	}
 
 /*slideshow css*/
@@ -50,7 +54,7 @@
 				   font-size:100px;
 				   padding-bottom: 40px;
 				   color: bisque;
-    			   text-shadow: 4px 4px 6px #000000;;}
+    			   text-shadow: 4px 4px 6px #000000;}
 	#jumbotron-sentence {font-family:"Homemade Apple";
 						 font-size: 50px;
 						 color:antiquewhite;
@@ -58,5 +62,6 @@
 	
 /*google form css*/
 	#google_form {text-align: center;}
+
 
 </style>
