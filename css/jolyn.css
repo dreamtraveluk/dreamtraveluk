@@ -4,6 +4,7 @@
 	.w3-home{background-color: black;}
 	.w3-bar-item.w3-button.w3-home {font-family: "Calligraffitti", cursive; font-size:25px;}
 	.w3-bar{font-family: 'Handlee', cursive; font-size:25px;}
+	#showwhensmall {font-family: 'Handlee', cursive; font-size:25px;}
 
 /*title css*/
 	.page_title h1{
