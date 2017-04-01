@@ -3,8 +3,8 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"> <!--link to bootstrap code-->
 <link rel="stylesheet" type="text/css" href="css/jolyn.css">
-<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--link to a nice font on Google-->
-<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> <!--link to another nice font on Google-->
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--navbar font-->
+<link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet"> <!--jumbotron and first sentences font-->
 
 <head>
 	<title>About</title>
@@ -15,46 +15,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
-
 <body>
 
 <!---nav bar code-->
 <div class="w3-bar w3-grey">
-<a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="bath_x1.html">Bath</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="brighton_x1.html">Brighton</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="edinburgh_x1.html">Edinburgh</a>
+  <a class="w3-bar-item w3-button w3-black w3-right w3-hide-small" href="about_x1.html">About us</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="showwhensmall" class="w3-bar-block w3-grey w3-hide w3-hide-large w3-hide-medium">
   <a class="w3-bar-item w3-button" href="bath_x1.html">Bath</a>
   <a class="w3-bar-item w3-button" href="brighton_x1.html">Brighton</a>
   <a class="w3-bar-item w3-button" href="edinburgh_x1.html">Edinburgh</a>
-  <a class="w3-bar-item w3-button" href="about_x1.html">About us</a>
+  <a class="w3-bar-item w3-button w3-black" href="about_x1.html">About us</a>
 </div>
 
 
 <div class="intro_sentences">
+  <h1 class="first-sentences">Who are we?</h1> 
 	<p>This website has been made by three girls in grey, rainy London at Imperial College.</p>
 	<p>We are learning about web development at Code First: Girls.</p>
 	<p>...though what we really need right now is to explore the dreamy rest-of-UK!</p>
 </div>
-
-
 
 <div class="w3-content w3-display-container about-us-slideshow">
   <img class="mySlides" src="images/About_us/codefirstgirls-logo.png">
   <img class="mySlides" src="images/About_us/codefirstgirls-1.jpg">
   <img class="mySlides" src="images/About_us/codefirstgirls-2.png">
 
-   
    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle">
     <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
     <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-
 </div>
-
 </div>
-
-
 
 <!--social media bar-->
 <div class="w3-bottom social_bar">
@@ -64,11 +64,18 @@
     <a href="https://www.instagram.com/"><img class="socialmedia" src="images/Social_media_icons/instagram-icon.png"></i></a>
 </div>
 
-
-
 </body>
 
 <script>
+//javascript for responsive navbar which resizes if screen is small//
+function myFunction() {
+    var x = document.getElementById("showwhensmall");
+    if (x.className.indexOf("w3-hide") == -1) {
+        x.className += " w3-hide";
+    } else { 
+        x.className = x.className.replace("w3-hide", "");
+    }
+}
 
 //javascript for moving images on slideshow//
 	var slideIndex = 1;
@@ -85,7 +92,6 @@
  	for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" w3-white", "");}
   	x[slideIndex-1].style.display = "block";  
   	dots[slideIndex-1].className += " w3-white";}
-
 </script>
 
 </html>

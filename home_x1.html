@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-  
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"> <!--link to bootstrap code-->
 <link rel="stylesheet" type="text/css" href="css/jolyn.css">
-
-<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--link to a nice font on Google-->
-<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> <!--link to another nice font on Google-->
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> <!--navbar font-->
 <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> <!--jumbotron sentence font-->
-<link href="https://fonts.googleapis.com/css?family=Paprika" rel="stylesheet"> <!--jumbotron font-->
+<link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet"> <!--jumbotron and first sentences font-->
 
 <head>
 	<title>Dream Travel UK</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 
 <body>
 
@@ -26,16 +22,24 @@
 
 <!---nav bar code-->
 <div class="w3-bar w3-grey">
-<a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="bath_x1.html">Bath</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="brighton_x1.html">Brighton</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="edinburgh_x1.html">Edinburgh</a>
+  <a class="w3-bar-item w3-button w3-black w3-right w3-hide-small" href="about_x1.html">About us</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="showwhensmall" class="w3-bar-block w3-grey w3-hide w3-hide-large w3-hide-medium">
   <a class="w3-bar-item w3-button" href="bath_x1.html">Bath</a>
   <a class="w3-bar-item w3-button" href="brighton_x1.html">Brighton</a>
   <a class="w3-bar-item w3-button" href="edinburgh_x1.html">Edinburgh</a>
-  <a class="w3-bar-item w3-button" href="about_x1.html">About us</a>
+  <a class="w3-bar-item w3-button w3-black" href="about_x1.html">About us</a>
 </div>
 
-
 <div class="intro_sentences">
-	<p>London is stressing you out? All you see is grey sky and rain? Need to get away from it all?</p>
+	<h1 class="first-sentences">Is London stressing you out? </h1> 
+  <p> All you see are grey skies and rain? Need to get away from it all?</p>
 	<p>Time to explore the dreamy rest-of-UK!</p>
 </div>
 
@@ -56,12 +60,11 @@
 </div>
 </div>
 
-
 <div class="embed_form">
-	<h1>Know more dream places? Let us know and win a free trip!</h1>
+	<h1 class="first-sentences"> Know more dream places? Let us know and win a free trip!</h1>
 	<p>To suggest more dreamy places for the website, please fill in the form below.</p>
 	<p>If your suggestion is chosen to be added to the website, we'll give you a free weekend trip there!</p>
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3Vc18BbfjtDstQlX3cJ5pfFT-U0mTM7fzRuvG7-OFUpOttw/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	<iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSf3Vc18BbfjtDstQlX3cJ5pfFT-U0mTM7fzRuvG7-OFUpOttw/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>
 
 <!--social media bar-->
@@ -75,7 +78,15 @@
 </body>
 
 <script>
-
+//javascript for responsive navbar which resizes if screen is small//
+function myFunction() {
+    var x = document.getElementById("showwhensmall");
+    if (x.className.indexOf("w3-hide") == -1) {
+        x.className += " w3-hide";
+    } else { 
+        x.className = x.className.replace("w3-hide", "");
+    }
+}
 
 //javascript for moving images on slideshow//
 	var slideIndex = 1;
@@ -92,8 +103,6 @@
  	for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" w3-white", "");}
   	x[slideIndex-1].style.display = "block";  
   	dots[slideIndex-1].className += " w3-white";}
-
-
 </script>
 
 </html>
