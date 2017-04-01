@@ -21,25 +21,76 @@
 	}
 
 /*slideshow css*/
-	.w3-display-container {max-width:100%; height:400px;}
-	.mySlides {width:100%;height:100%;}
-	.w3-badge {	   display: inline-block;
-    			   /* padding-left: 8px;
-    			   padding-right: 8px; */
+	.w3-display-container {max-width:80%; height:70%;}
+	.mySlides {width:100%;height:100%; border: 10px double white; border-radius:30px; opacity:0.8;}
+	.w3-badge {cursor:pointer;
+				   display: inline-block;
+    			   padding-left: 8px;
+    			   padding-right: 8px;
     			   text-align: center;
     			   height: 16px;}
     .w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {width:100%;}
 
-/*resizing the Brighton food image*/
-	.img-responsive.center-block {height:500px; width:1000px;}
+/*putting some space between navbar and text as well as to the left of each div*/
+	.intro_sentences {margin:20px;}
+	.attractions_sentences {margin:20px;}
+	.food_sentences {margin:20px;}
+	.embed_weather {margin:20px;}
+
+/*making first sentences stand out*/
+	.first-sentences {font-family: "Lily Script One", cursive;}
+
+/*resizing the bath images*/
+	.img-responsive.bath-images {height:100%; width:100%;}
+
+/*polaroid effect for bath images*/
+	.polaroid {
+  	position: relative;
+ 	width: 220px;
+ 	padding:10px;}
+	 
+	.polaroid img {
+  	border: 10px solid #f3eff0;
+  	border-bottom: 45px solid #f3eff0;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;}
+ 
+	.polaroid p {
+ 	position: absolute;
+ 	text-align: center;
+ 	width: 100%;
+ 	bottom: 0px;
+ 	font: 400 18px/1 'Lily Script One', cursive;
+  	color: #888;}
+
+/*making food images look proportionate and responsive to resizing*/
+	.food-image{height:500px; 
+				width:800px;
+				border:5px solid black; 
+				border-radius:10px; 
+				display:block;
+				margin: 0 auto;}
+	@media only screen and (max-width: 900px) {
+    .food-image{width: 100%; height:100%;}
+	}
 
 /*resizing the about us images*/
-	.about-us-slideshow {width:100%; height: 500px;}
+	.about-us-slideshow {width:100%; height: 500px;margin-bottom:25px;}
 	.w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {padding:25px;}
 
+/*adding border to google form and some space from the edges of screen*/
+	.embed_form {margin:20px;}
+	#google-form {border:5px solid black; border-radius:10px;}
+		@media only screen and (max-width: 900px) {
+    	#google-form{width: 100%; height:100%;}
+		}
+	.embed_map {margin: 20px;}
+		@media only screen and (max-width: 900px) {
+    	.google-map{width: 100%; height:100%;}
+		}
+
 /*social bar css*/
-	.embed_form {padding-bottom: 25px;}
-	.embed_map {padding-bottom: 25px;}
 	.w3-bottom{background-color: rgba(192,192,192,0.5); margin: 0 auto; text-align: center}
 	.w3-bottom-bar {margin: 0 auto; text-align: center;}
 	.socialmedia{width:25px; height:25px; margin-left:auto; margin-right:auto;}
@@ -66,5 +117,11 @@
 		margin-top: 100px;
 	}
 
+/*background image*/
+body{background-image: url("../images/background_image.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
 
 </style>
