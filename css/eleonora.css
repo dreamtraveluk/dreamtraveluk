@@ -1,4 +1,7 @@
-img {width:50%;height:50%;}
+img {width:auto;
+    height:50%;
+
+}
 
 blockquote.twitter-tweet {
   display: inline-block;
@@ -21,6 +24,7 @@ blockquote.twitter-tweet p {
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
+
 }
 
 blockquote.twitter-tweet a {
