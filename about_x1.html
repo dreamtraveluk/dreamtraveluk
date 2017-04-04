@@ -36,11 +36,19 @@
 
 <!---nav bar code-->
 <div class="w3-bar w3-grey">
-<a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button w3-home" href="home_x1.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="bath_x1.html">Bath</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="brighton_x1.html">Brighton</a>
+  <a class="w3-bar-item w3-button w3-hide-small" href="edinburgh_x1.html">Edinburgh</a>
+  <a class="w3-bar-item w3-button w3-black w3-right w3-hide-small" href="about_x1.html">About us</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="showwhensmall" class="w3-bar-block w3-grey w3-hide w3-hide-large w3-hide-medium">
   <a class="w3-bar-item w3-button" href="bath_x1.html">Bath</a>
   <a class="w3-bar-item w3-button" href="brighton_x1.html">Brighton</a>
   <a class="w3-bar-item w3-button" href="edinburgh_x1.html">Edinburgh</a>
-  <a class="w3-bar-item w3-button" href="about_x1.html">About us</a>
+  <a class="w3-bar-item w3-button w3-black" href="about_x1.html">About us</a>
 </div>
 
 <div class="container">
@@ -98,6 +106,17 @@
     <a href="https://www.instagram.com/"><img class="socialmedia" src="images/Social_media_icons/instagram-icon.png"></i></a>
 </div>
 
+<script>
+//javascript for responsive navbar which resizes if screen is small//
+function myFunction() {
+    var x = document.getElementById("showwhensmall");
+    if (x.className.indexOf("w3-hide") == -1) {
+        x.className += " w3-hide";
+    } else { 
+        x.className = x.className.replace("w3-hide", "");
+    }
+}
+</script>
 
 <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
 </body>
