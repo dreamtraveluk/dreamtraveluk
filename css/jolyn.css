@@ -101,7 +101,7 @@
 				background-image: url('../images/rain_1.jpg'); 
 				background-size: cover; 
 				background-attachment: fixed;
-				margin-top: 30px;}
+				/*margin-top: 30px;*/}
 	#jumbotron-h1 {font-family: "Paprika";
 				   font-size:100px;
 				   padding-bottom: 40px;
@@ -119,7 +119,14 @@
 	}
 
 /*background image*/
-body{background-image: url("../images/background_image.jpg");
+
+body {background-image: url("../images/background_image.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+.home_page {background-image: url("../images/rain_1.jpg");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
