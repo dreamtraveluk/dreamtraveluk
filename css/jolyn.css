@@ -41,6 +41,7 @@
     			   height: 16px;}
     .w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {width:100%;}
 
+
 /*putting some space between navbar and text as well as to the left of each div*/
 	.intro_sentences {margin:20px; margin-top: 80px;}
 	.attractions_sentences {margin:20px;}
@@ -73,6 +74,11 @@
  	bottom: 0px;
  	font: 400 18px/1 'Lily Script One', cursive;
   	color: #888;}
+
+  	.resize{
+  		height:200px; 
+		width:300px;
+  	}
 
 /*making food images look proportionate and responsive to resizing*/
 	.food-image{height:500px; 
