@@ -1,7 +1,8 @@
 $(function () {
-   $(".header").hover(function(){
+   $(".animated").hover(function(){
     $(this).addClass("jello");
     }, function(){
     $(this).removeClass("jello");
 });
 });
+

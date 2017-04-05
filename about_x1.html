@@ -54,15 +54,15 @@
 <div class="container">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-4 col-xs-6">
-        <img src="images/pink.jpg" class="img-responsive img-rounded" alt="Responsive image">
+      <div class="col-sm-4 col-xs-6 align-middle">
+        <img src="images/pink.jpg" class="img-responsive img-rounded center-block animated" alt="Responsive image">
       </div>
-      <div class="col-sm-4 col-xs-6 text-justify">
+      <div class="col-sm-4 col-xs-6 text-justify align-middle">
         <p class="txt">Blossom is the tactician and self-proclaimed leader of the Powerpuff Girls. Her personality ingredient is "everything nice", her signature color is pink, and she has long red hair with a red bow. She was named for having spoken freely and honestly to the Professor shortly after her creation as shown in the Powerpuff Girls Movie. She is often seen as the most level-headed, and composed member of the group and also strong and determined. Her unique power is freezing objects with her breath as seen in the episode "Ice Sore".</p>
       </div>
       <div class="clearfix visible-xs-block"></div>
       <div class="col-sm-4">
-        <img src="images/About_us/codefirstgirls-logo.png" class="img-responsive" alt="Responsive image">
+        <img src="images/About_us/codefirstgirls-logo.png" class="img-responsive align-middle" alt="Responsive image">
       </div>
     </div>
     <div class="row">
@@ -70,10 +70,10 @@
         <p class="txt">Bubbles is the cute and sensitive one. Her personality ingredient is sugar, her signature color is blue, and she has short blonde hair in two pigtails. Bubbles is seen as kind and very sweet but she is also capable of extreme rage and can fight monsters just as well as her sisters can. Her best friend is a stuffed octopus doll she calls "Octi", and she also loves animals. She exhibits the ability to both understand multiple languages and communicate with various animals (squirrels, cats, monsters), and her unique power is emitting supersonic waves with her voice.</p>
       </div>
       <div class="col-sm-4 col-xs-6">
-        <img src="images/blue.jpg" class="img-responsive img-rounded" alt="Responsive image">
+        <img src="images/blue.jpg" class="img-responsive img-rounded center-block" alt="Responsive image">
       </div>
       <div class="clearfix visible-xs-block"></div>
-      <div class="col-sm-4">
+      <div id="twitter" class="col-sm-4">
         <blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr">Some great new opportunities on our Jobs blog, start your tech journey here! <a href="https://twitter.com/hashtag/womenintech?src=hash">#womenintech</a> <a href="https://twitter.com/hashtag/tech?src=hash">#tech</a> <a href="https://twitter.com/hashtag/diversity?src=hash">#diversity</a> <a href="https://t.co/2HObTeI99b">https://t.co/2HObTeI99b</a> <a href="https://t.co/0QKmwlKyF0">pic.twitter.com/0QKmwlKyF0</a></p>&mdash; Code First: Girls (@CodeFirstGirls) <a href="https://twitter.com/CodeFirstGirls/status/847459687758876672">30 marzo 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
@@ -116,9 +116,24 @@ function myFunction() {
         x.className = x.className.replace("w3-hide", "");
     }
 }
+
+twttr.widgets.load(
+  document.getElementById("twitter")
+);
+
+
+twttr.widgets.createTweet(
+  '20',
+  document.getElementById('twitter'),
+  {
+    theme: 'dark'
+  }
+);
+
 </script>
 
 <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+
 </body>
 
 
