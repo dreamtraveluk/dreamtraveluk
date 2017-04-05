@@ -62,7 +62,9 @@
   	border-bottom: 45px solid #f3eff0;
     -webkit-box-shadow: 3px 3px 3px #777;
     -moz-box-shadow: 3px 3px 3px #777;
-    box-shadow: 3px 3px 3px #777;}
+    box-shadow: 3px 3px 3px #777;
+		height:200px; 
+		width:300px;}
  
 	.polaroid p {
  	position: absolute;
