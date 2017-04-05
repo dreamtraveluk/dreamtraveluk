@@ -6,6 +6,12 @@
 	.w3-bar{font-family: 'Handlee', cursive; font-size:25px;}
 	#showwhensmall {font-family: 'Handlee', cursive; font-size:25px;}
 
+	.navigation_bar{
+		position: fixed; /* Set the navbar to fixed position */
+	    top: 0; /* Position the navbar at the top of the page */
+	    width: 100%;
+	    }
+
 /*title css*/
 	.page_title h1{
 		font-family: "Fredoka One", cursive;
@@ -33,7 +39,7 @@
     .w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {width:100%;}
 
 /*putting some space between navbar and text as well as to the left of each div*/
-	.intro_sentences {margin:20px;}
+	.intro_sentences {margin:20px; margin-top: 80px;}
 	.attractions_sentences {margin:20px;}
 	.food_sentences {margin:20px;}
 	.embed_weather {margin:20px;}
